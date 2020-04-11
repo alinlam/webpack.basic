@@ -1,0 +1,27 @@
+{
+    "name": "webpack-basic",
+    "version": "1.0.0",
+    "description": "learning webpack configuration",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error:  no test specified \" && exit 1",
+        "start": "webpack-dev-server"
+    },
+    "keywords": [],
+    "author": "Alin Lam",
+    "license": "LL",
+    "devDependencies": {
+        "babel-core": "6.26.3",
+        "babel-loader": "8.1.0",
+        "babel-preset-latest": "6.24.1",
+        "jshint": "2.11.0",
+        "jshint-loader": "0.8.4",
+        "node-libs-browser": "2.2.1",
+        "webpack": "4.42.1",
+        "webpack-cli": "^3.3.11",
+        "strip-loader": "0.1.2"
+    },
+    "dependencies": {
+        "@babel/core": "^7.9.0"
+    }
+}

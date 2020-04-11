@@ -1,7 +1,22 @@
 module.exports = {
-    entry: "./app.js",
+    entry: ["./app.js", "./utils.js"],
     output: {
         filename: "bundle.js"
+    },    
+    module:{
+        rules:[            
+            {
+                test: /\.es6$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "babel-loader"                        
+                    }
+                ]                
+            }            
+        ],
     },
-    watch: true
+    resolve:{
+        extensions: ['.js', '.es6']
+    }
 }
